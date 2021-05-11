@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background-image: url(./images/abstrakt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+header{
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 5px 10px 2px black;
+    text-shadow: 2px 4px 10px black;
+    transition-delay: 20ms;
+}
+
+header button{
+    background: none;
+    color: white;
+    border: 0;
+    transition: 1s all ease;
+    animation: slidein 1s ease forwards;
+}
+
+.header{
+    transform: translateY(-200%);
+    transition: all 1s ease;
+}
+
+header button:focus{
+    outline: none;
+}
+
+.block{
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about{
+    width: 100%;
+    height: 65%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 15px 10px black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 2em;
+    animation: showin 1s ease forwards;
+    transition: 1s ease all;
+    margin-bottom: 5%;
+    transition-delay: 200ms;
+}
+
+#about img{
+    width: 25%;
+}
+
+#stacks{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 15px 10px black;
+    height: 30%;
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(300%);
+    transition: 1s ease all;
+    transition-delay: 3s;
+}
+
+#stacks i{
+    padding-left: 5%;
+    padding-right: 5%;
+    transition: all .2s ease;
+}
+#stacks h1{
+    font-size: 20px;
+    position: absolute;
+    top:10%
+}
+
+#stacks i:hover{
+    font-size: 5rem;
+    transition: all .2s ease;
+}
+
+
+#test{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#school, #blank{
+    width: 20%;
+    height: 60%;
+}
+
+main::after{
+    content: "";
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: -1;
+    opacity: 0.05;
+}
+
+#blank{
+    margin-right: 5%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 15px 10px black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-200%);
+    transition: 1s ease all;
+    transition-delay: 2s;
+}
+
+#school{
+    margin-left: 5%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 15px 10px black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: 1s ease all;
+    transition-delay: 1s;
+}
+
+#school img, #blank img{
+    width: 90%;
+}
+
+#dev{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease all;
+}
+#dev h1{
+    font-size: 80px;
+    color: white;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+    animation: show .4s ease;
+    text-shadow: 2px 4px 10px black;
+}
+
+span{
+    opacity: 0;
+    font-size: 70px;
+    transition: all .5s ease;
+}
+
+span.fade{
+    opacity: 1;
+    color: white;
+    font-size: 60px;
+}
+
+
+#about h1{
+    margin-bottom: 2rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 50%;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 15px 10px black;
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+form button{
+    width: 20%;
+    height: 5%;
+    margin-top: 5%;
+    border-radius: 2em;
+    border: 0;
+    background-color: white;
+}
+
+#mess{
+    width: 80%;
+    height: 50%;
+    resize: none;
+    border-radius: 2em;
+    padding: 2%;
+}
+#status{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 10%;
+}
+
+form input{
+    height: 6%;
+    width: 50%;
+    text-align: center;
+}
+
+footer{
+    height: 2vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px -5px 20px 5px black;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: black 3px 3px 0px;
+}
+
+
+
+
+
+/* Animations */
+
+
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slidein{
+    from{
+        transform: translateY('-200%');
+    }
+    to{
+        transform: translateY('0%');
+    }
+}
+
+
